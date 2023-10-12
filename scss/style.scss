@@ -1,5 +1,4 @@
 @import 'reset';
-
 section {
 	width: 80vw;
 	border: 1px solid red;
@@ -7,12 +6,42 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
-	article {
+	.left {
+		width: 20%;
 		background: aqua;
-		border: 1px solid black;
-		width: 32%;
-		height: 300px;
-		margin-bottom: 30px;
+		font-size: 16px;
+		//word-break: keep-all; 단어기준으로 줄바꿈 처리
+		//word-break: break-all; 글자기준으로 줄바꿈 처리
+		word-break: break-all;
+	}
+	.right {
+		width: 75%;
+		height: 600px;
+		background: hotpink;
+	}
+}
+
+//tablet
+@media screen and (max-width: 999px) {
+	section {
+		.left {
+			width: 47%;
+		}
+		.right {
+			width: 47%;
+		}
+	}
+}
+
+//mobile
+@media screen and (max-width: 599px) {
+	section {
+		.left {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+		.right {
+			width: 100%;
+		}
 	}
 }
