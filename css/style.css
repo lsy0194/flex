@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -13,38 +12,20 @@ body li {
   list-style: none;
 }
 
-/*
-  justify-content(가로축 레이아웃 설정)
-  - flex-start: 부모요소 안쪽에서 왼쪽 정렬
-  - flex-end: 부모요소 안쪽에서 오른쪽 정렬
-  - space-between: 자식요소를 부모요소의 양끝에 붙이고 사이 간격을 균등 배치
-  - space-around: 각 자식요소의 양끝 여백을 균등 배치
-  - space-evenly: 각 자식요소의 양끝 여백도 동등하게 배치
-  - center: 가운데 배치
-
-  align-items (줄바꿈 요소가 없을때 세로배치)
-  align-content(줄바꿈 요소가 있을때 세로배치)
-  이하 배치 방법은 justify-content와 같음
-
-  flex속성안에서 줄바꿈 처리하기 위해서는 부모요소에 flex-wrap: wrap;
-*/
 section {
   width: 80vw;
-  height: 60vh;
+  border: 1px solid red;
   margin: 100px auto;
-  background: lightblue;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 section article {
-  width: 100px;
-  height: 100px;
+  background: aqua;
   border: 1px solid black;
-  background: pink;
-  font-size: 30px;
+  width: 32%;
+  height: 300px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
