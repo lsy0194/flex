@@ -36,10 +36,11 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: space-between;
+  align-content: center;
+  flex-direction: row-reverse;
 }
 section article {
-  width: 400px;
+  width: 100px;
   height: 100px;
   border: 1px solid black;
   background: pink;
